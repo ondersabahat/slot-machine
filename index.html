@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    
+    <title>Slot Machine</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="spin-container">
+                <div class="spin-content">
+                    <div class="rows">
+                        <div class="col">
+                            <div class="row" id="i1"></div>
+                            <div class="row" id="i2"></div>
+                            <div class="row" id="i3"></div>
+                        </div>
+                        <div class="col">
+                            <div class="row" id="i4"></div>
+                            <div class="row" id="i5"></div>
+                            <div class="row" id="i6"></div>
+                        </div>
+                        <div class="col">
+                            <div class="row" id="i7"></div>
+                            <div class="row" id="i8"></div>
+                            <div class="row" id="i9"></div>
+                        </div>
+                    </div>
+                    <div class="images">
+                        <div class="image" id="seven" ><image   src="./static/images/seven.png" width="60px" height="60px"></image></div>
+                        <div class="image" id="cherry" ><image src="./static/images/cherry.png" width="60px" height="60px"></image></div>
+                        <div class="image"  id="lemon"><image  src="./static/images/lemon.png" width="60px" height="60px"></image></div>
+                        <div class="image" id="grape" ><image   src="./static/images/slot-machine.png" width="60px" height="60px"></image></div>
+                    </div>
+                </div>
+                <div class="inputs">
+                    <div class="input-items">
+                        <label for="deposit">Deposit: </label>
+                        <input type="number" name="deposit" id="deposit" placeholder="0">
+                        <button class="deposit-btn">Deposit</button>
+                    </div>
+                    <div class="input-items">    
+                        <label for="lines">Lines: </label>
+                        <input type="number" id="lines" name="lines" placeholder="0">
+                    </div>
+                    <div class="input-items">    
+                        <label for="bet">Bet amount per line: </label>
+                        <input type="number" id="bet" name="bet" placeholder="0">
+                    </div>
+                </div>
+                <div class="error-div">
+                    <p class="error"></p>
+                </div>
+                <div class="spin">
+                    <button class="spin-btn" id="spin-btn">SPIN</button>
+                </div>
+                <div class="balance">
+                    <p >Wallet: <span id="deposit-amount"></span></p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="./project.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+:root {
+    --base-font: 'Source Sans Pro', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 100vh;
+    margin-left: 200px;
+    
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 20px;
+}
+
+.spin-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.spin-content {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 8px;
+    background-color: lightslategrey;
+}
+
+.spin-content .rows {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.spin-content .rows .col {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+
+.spin-content .rows .col .row {   
+    margin-left: 80px;
+    margin-right: 20px;
+    width: 60px;
+    height: 60px;
+    /*border: 1px solid lightgray;*/
+    border-radius: 6px;
+    text-align: center;
+
+}
+
+.spin-content .rows .col .row image {
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    transition: .8s;
+}
+
+
+
+
+.images {
+    display: none;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.input-items {
+    padding: 10px;
+}
+
+.input-items label {
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: var(--base-font);   
+}
+
+.input-items input {
+    margin-left: 10px;
+    width: 160px;
+    height: 40px;
+    padding: 4px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    background-color: whitesmoke;
+}
+
+.deposit-btn {
+    width: 100px;
+    height: 40px;
+    padding: 4px;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    background-color: red;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 1.3rem;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+button {
+    width: 500px;
+    height: 50px;
+    padding: 4px;
+    border: 2px solid lightgray;
+    border-radius: 4px;
+    background-color: lightblue;
+    color: black;
+    font-weight: bold;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: .8;
+    scale: 1.04;
+}
+
+p {
+    font-weight: bold;
+    font-family: var(--base-font);
+    font-size: 1.5rem;
+    color: green;
+}
+
+.error-div p {
+    font-weight: bold;
+    font-family: var(--base-font);
+    font-size: 1.4rem;
+    color: rgb(117, 5, 5);
+}
+
+
